@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AyoWeb Solutions</title>
+  <style>
+    :root {
+      --primary-color: #0a2f63;
+      --accent-color: #007acc;
+      --text-color: #333;
+      --bg-color: #f9f9f9;
+      --white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      color: var(--white);
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-container img {
+      max-height: 80px;
+      margin-right: 15px;
+    }
+
+    .logo-container h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    nav {
+      background: var(--primary-color);
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .services {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .service {
+      flex: 1 1 300px;
+      background: var(--white);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service h3 {
+      color: var(--accent-color);
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+      }
+
+      .logo-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo-container img {
+        margin: 0 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="baby.jpg" alt="Company Logo" />
+      <h1>AyoWeb Solutions</h1>
+    </div>
+    <p>Innovative Web & Software Solutions for Your Business</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section about">
+    <h2>About Us</h2>
+    <p>ProWeb Solutions is a results-driven digital agency focused on creating stunning and scalable websites, apps, and software platforms. Our team is dedicated to helping clients establish a strong online presence with performance, design, and user experience at the core of everything we build.</p>
+  </section>
+
+  <section id="services" class="section services-section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Web Development</h3>
+        <p>Custom-built, responsive websites that load fast and rank well on search engines.</p>
+      </div>
+      <div class="service">
+        <h3>Mobile Applications</h3>
+        <p>Android and iOS applications designed for performance and user engagement.</p>
+      </div>
+      <div class="service">
+        <h3>UI/UX Design</h3>
+        <p>Beautiful and intuitive user interfaces to elevate your brand and product usability.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> ayomidealade@gmail.com</p>
+    <p><strong>Phone:</strong> +2349064691040</p>
+    <p><strong>Address:</strong> 2, econet busstop, ogun state</p>
+  </section>
+
+  <footer>
+    &copy; 2025 ProWeb Solutions. All rights reserved.
+  </footer>
+
+</body>
+</html>
